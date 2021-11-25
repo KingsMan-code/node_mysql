@@ -1,0 +1,10 @@
+<h1>Livros Disponiveis:</h1>
+<form action="/books/insertbook" method="get" class ="form">
+    <div class="books-container">
+    {{#each books}}
+        <div>
+            #{{this.id}} - <span class="bold">{{this.title}}</span> - {{this.pageqty}} páginas
+        </div>
+    {{/each}}
+</div>
+</form>
